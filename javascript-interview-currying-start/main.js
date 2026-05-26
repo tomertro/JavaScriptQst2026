@@ -6,7 +6,13 @@
 //Checks if enough arguments were supplied
 //If yes → runs the original function
 //If not → returns another function waiting for more arguments
-//
+//So currying is mostly valuable when:
+
+//creating reusable configured functions
+//functional programming
+//composing operations
+//advanced callback patterns
+
 function curry(fn){
     let numOfArgs = fn.length;
     return function curried(...args){
