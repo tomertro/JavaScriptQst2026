@@ -24,7 +24,7 @@ const users = [
 
 function getActiveUsers(usersParam){
   activeUsers = usersParam.filter(user => user.isActive);
-  const sortedUsers = activeUsers.sort((a,b) => a.age > b.age);
+  const sortedUsers = activeUsers.sort((a,b) =>  b.age - a.age );
   return sortedUsers.map(user => user.name);
 
 };
